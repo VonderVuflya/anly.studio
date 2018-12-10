@@ -12,14 +12,14 @@ body {
 .content .main-photo_center {
   display: none;
 }
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 768px) {
   .content .main-photo_center {
     display: block;
-    width: 768px;
-    height: 742px;
+    width: 100%;
+    height: 1024px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 414px) {
   .content .main-photo_center {
     display: block;
     width: 414px;
@@ -64,11 +64,11 @@ body {
 }
 .content .container .wrapper header {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   position: sticky;
   top: 0;
-  padding-top: 48px;
+  padding-top: 40px;
   padding-bottom: 20px;
   background: url(./img/main-bg.jpg);
 }
@@ -109,62 +109,39 @@ body {
   display: flex;
   flex-direction: column;
 }
-.content .container .wrapper main h1 {
-  margin-top: 82px;
-  margin-bottom: 8px;
-  font-family: TTFirsNeue-Medium;
-  font-weight: 500;
-  font-style: normal;
-  font-stretch: normal;
-  color: #000000;
+.content .container .wrapper main .main-block {
+  margin-top: 566px;
+  margin-bottom: 56px;
 }
-@media screen and (max-width: 768px) {
-  .content .container .wrapper main h1 {
-    width: 350px;
-    height: 200px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .content .container .wrapper main h1 {
-    width: 602px;
-    height: 254px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .content .container .wrapper main h1 {
-    font-size: 48px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .content .container .wrapper main h1 {
-    font-size: 64px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .content .container .wrapper main h1 {
-    line-height: 0.91;
-    letter-spacing: -0.4px;
-  }
-}
-.content .container .wrapper main p {
+.content .container .wrapper main .main-block h1 {
   margin: 0;
-  font-family: TTFirsNeue-Medium;
-  font-weight: 500;
+  margin-bottom: 4px;
+  font-family: TTFirsNeue-Bold;
+  font-size: 44px;
+  font-weight: bold;
   font-style: normal;
   font-stretch: normal;
   line-height: normal;
   letter-spacing: normal;
   color: #000000;
+  line-height: 1;
 }
-@media screen and (max-width: 768px) {
-  .content .container .wrapper main p {
-    font-size: 18px;
-  }
+.content .container .wrapper main .main-block h2 {
+  margin: 0;
+  font-family: TTFirsNeue-Light;
+  font-size: 44px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: -1px;
+  color: #000000;
+  line-height: 1;
 }
-@media screen and (min-width: 768px) {
-  .content .container .wrapper main p {
-    font-size: 20px;
-  }
+.content .container .wrapper main .main-block h2:last-child {
+  width: 555px;
+  height: 176px;
+  margin-bottom: 32px;
 }
 .content .container .wrapper main a {
   display: flex;
@@ -177,12 +154,12 @@ body {
 }
 @media screen and (max-width: 1300px) {
   .content .container .wrapper main a {
-    margin-bottom: 140px;
+    margin-bottom: 56px;
   }
 }
 @media screen and (min-width: 1300px) {
   .content .container .wrapper main a {
-    margin-bottom: 180px;
+    margin-bottom: 56px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -192,41 +169,33 @@ body {
 }
 @media screen and (min-width: 768px) {
   .content .container .wrapper main a {
-    width: 454px;
+    width: 326px;
   }
 }
 .content .container .wrapper main a p {
   font-family: TTFirsNeue-Medium;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 500;
   font-style: normal;
   font-stretch: normal;
   line-height: normal;
-  letter-spacing: 0.8px;
+  letter-spacing: 0.6px;
   color: #ffffff;
 }
 .content .container .wrapper main a img {
-  margin-left: 8px;
+  margin-left: 6px;
   margin-top: 2px;
 }
 .content .container footer {
   display: flex;
   flex-direction: column;
-  padding-top: 30px;
+  padding-top: 68px;
   background-color: #000000;
 }
 .content .container footer p, .content .container footer a {
   margin: 0;
 }
-@media screen and (max-width: 767px) {
-  .content .container footer .block .social-links {
-    display: flex;
-    flex-direction: column;
-  }
-}
 .content .container footer .block p {
-  margin-top: 68px;
-  margin-bottom: 20px;
   opacity: 0.8;
   font-family: TTFirsNeue-Regular;
   font-weight: normal;
@@ -248,7 +217,10 @@ body {
 }
 .content .container footer .block a {
   margin-right: 56px;
+  margin-top: 20px;
+  margin-bottom: 68px;
   text-decoration: none;
+  display: block;
   opacity: 0.4;
   font-family: TTFirsNeue-Bold;
   font-weight: bold;
@@ -257,6 +229,10 @@ body {
   line-height: normal;
   letter-spacing: -0.4px;
   color: #ffffff;
+  -webkit-transition: margin-top 0.3s ease-out, margin-bottom 0.3s ease-out, opacity 0.3s ease-in-out;
+  -moz-transition: margin-top 0.3s ease-out, margin-bottom 0.3s ease-out, opacity 0.3s ease-in-out;
+  -o-transition: margin-top 0.3s ease-out, margin-bottom 0.3s ease-out, opacity 0.3s ease-in-out;
+  transition: margin-top 0.3s ease-out, margin-bottom 0.3s ease-out, opacity 0.3s ease-in-out;
 }
 @media screen and (max-width: 768px) {
   .content .container footer .block a {
@@ -268,8 +244,43 @@ body {
     font-size: 40px;
   }
 }
+.content .container footer .block a:hover {
+  opacity: 1;
+  margin-top: 18px;
+  margin-bottom: 70px;
+}
 .content .container footer .block a:last-child {
   margin-right: 0;
+}
+.content .container footer .block .phone-link {
+  margin-bottom: 0;
+}
+.content .container footer .block .phone-link a:hover {
+  padding-bottom: 2px;
+}
+.content .container footer .block .social-links {
+  display: flex;
+}
+@media screen and (max-width: 767px) {
+  .content .container footer .block .social-links {
+    flex-direction: column;
+  }
+}
+.content .container footer .block .social-links a {
+  color: #ffffff;
+  opacity: 0.4;
+}
+.content .container footer .block .social-links a:hover {
+  opacity: 1;
+}
+.content .container footer .block .social-links a:hover:first-child {
+  color: #ef2a82;
+}
+.content .container footer .block .social-links a:hover:nth-child(2) {
+  color: #1c66ff;
+}
+.content .container footer .block .social-links a:hover:last-child {
+  color: #008fd5;
 }
 .content .container footer .credit {
   margin-bottom: 32px;

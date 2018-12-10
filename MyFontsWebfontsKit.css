@@ -82,7 +82,14 @@
     url("webfonts/37E8E0_0_0.ttf") format("truetype");
 }
 
-/* @font-face {font-family: 'TTFirsNeue-Light';src: url('webfonts/37E8E0_1_0.eot');src: url('webfonts/37E8E0_1_0.eot?#iefix') format('embedded-opentype'),url('webfonts/37E8E0_1_0.woff2') format('woff2'),url('webfonts/37E8E0_1_0.woff') format('woff'),url('webfonts/37E8E0_1_0.ttf') format('truetype');} */
+@font-face {
+  font-family: "TTFirsNeue-Light";
+  src: url("webfonts/37E8E0_1_0.eot");
+  src: url("webfonts/37E8E0_1_0.eot?#iefix") format("embedded-opentype"),
+    url("webfonts/37E8E0_1_0.woff2") format("woff2"),
+    url("webfonts/37E8E0_1_0.woff") format("woff"),
+    url("webfonts/37E8E0_1_0.ttf") format("truetype");
+}
 
 @font-face {
   font-family: "TTFirsNeue-Medium";
