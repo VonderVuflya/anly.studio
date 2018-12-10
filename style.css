@@ -9,20 +9,58 @@ body {
   background-color: #f3f3f3;
   background: url(./img/main-bg.jpg);
 }
-.content .main-photo {
-  height: 100vh;
-  position: sticky;
-  top: 0;
-  right: 0;
-  bottom: 0;
+.content .main-photo_center {
+  display: none;
+}
+@media screen and (max-width: 1300px) {
+  .content .main-photo_center {
+    display: block;
+    width: 768px;
+    height: 742px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .content .main-photo_center {
+    display: block;
+    width: 414px;
+    height: 552px;
+  }
+}
+.content .main-photo_footer {
+  display: none;
+}
+@media screen and (min-width: 1300px) {
+  .content .main-photo_footer {
+    display: block;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    right: 0;
+    bottom: 0;
+  }
 }
 .content .container {
   background-color: #f3f3f3;
   background: url(./img/main-bg.jpg);
   width: 100%;
 }
-.content .container .wrapper {
-  padding: 0 80px 0 140px;
+@media screen and (max-width: 768px) {
+  .content .container .wrapper {
+    padding-right: 32px;
+    padding-left: 32px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .content .container .wrapper {
+    padding-right: 56px;
+    padding-left: 56px;
+  }
+}
+@media screen and (min-width: 1300px) {
+  .content .container .wrapper {
+    padding-right: 80px;
+    padding-left: 140px;
+  }
 }
 .content .container .wrapper header {
   display: flex;
@@ -43,7 +81,6 @@ body {
   margin: 0;
   margin-bottom: 6px;
   font-family: TTFirsNeue-Regular;
-  font-size: 20px;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
@@ -52,27 +89,66 @@ body {
   text-align: right;
   color: #000000;
 }
+@media screen and (max-width: 768px) {
+  .content .container .wrapper header p {
+    width: 135px;
+    height: 36px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .content .container .wrapper header p {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 1300px) {
+  .content .container .wrapper header p {
+    font-size: 20px;
+  }
+}
 .content .container .wrapper main {
   display: flex;
   flex-direction: column;
 }
 .content .container .wrapper main h1 {
-  margin: 82px 0 8px 0;
-  width: 602px;
-  height: 254px;
+  margin-top: 82px;
+  margin-bottom: 8px;
   font-family: TTFirsNeue-Medium;
-  font-size: 64px;
   font-weight: 500;
   font-style: normal;
   font-stretch: normal;
-  line-height: 0.91;
-  letter-spacing: -0.4px;
   color: #000000;
+}
+@media screen and (max-width: 768px) {
+  .content .container .wrapper main h1 {
+    width: 350px;
+    height: 200px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .content .container .wrapper main h1 {
+    width: 602px;
+    height: 254px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .content .container .wrapper main h1 {
+    font-size: 48px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .content .container .wrapper main h1 {
+    font-size: 64px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .content .container .wrapper main h1 {
+    line-height: 0.91;
+    letter-spacing: -0.4px;
+  }
 }
 .content .container .wrapper main p {
   margin: 0;
   font-family: TTFirsNeue-Medium;
-  font-size: 20px;
   font-weight: 500;
   font-style: normal;
   font-stretch: normal;
@@ -80,16 +156,44 @@ body {
   letter-spacing: normal;
   color: #000000;
 }
+@media screen and (max-width: 768px) {
+  .content .container .wrapper main p {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .content .container .wrapper main p {
+    font-size: 20px;
+  }
+}
 .content .container .wrapper main a {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 40px;
-  margin-bottom: 180px;
-  width: 454px;
   height: 72px;
   background-color: #000000;
   text-decoration: none;
+}
+@media screen and (max-width: 1300px) {
+  .content .container .wrapper main a {
+    margin-bottom: 140px;
+  }
+}
+@media screen and (min-width: 1300px) {
+  .content .container .wrapper main a {
+    margin-bottom: 180px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .content .container .wrapper main a {
+    width: 346px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .content .container .wrapper main a {
+    width: 454px;
+  }
 }
 .content .container .wrapper main a p {
   font-family: TTFirsNeue-Medium;
@@ -114,12 +218,17 @@ body {
 .content .container footer p, .content .container footer a {
   margin: 0;
 }
+@media screen and (max-width: 767px) {
+  .content .container footer .block .social-links {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .content .container footer .block p {
   margin-top: 68px;
   margin-bottom: 20px;
   opacity: 0.8;
   font-family: TTFirsNeue-Regular;
-  font-size: 20px;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
@@ -127,12 +236,21 @@ body {
   letter-spacing: normal;
   color: #ffffff;
 }
+@media screen and (max-width: 768px) {
+  .content .container footer .block p {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 1300px) {
+  .content .container footer .block p {
+    font-size: 20px;
+  }
+}
 .content .container footer .block a {
   margin-right: 56px;
   text-decoration: none;
   opacity: 0.4;
   font-family: TTFirsNeue-Bold;
-  font-size: 40px;
   font-weight: bold;
   font-style: normal;
   font-stretch: normal;
@@ -140,8 +258,20 @@ body {
   letter-spacing: -0.4px;
   color: #ffffff;
 }
+@media screen and (max-width: 768px) {
+  .content .container footer .block a {
+    font-size: 32px;
+  }
+}
+@media screen and (min-width: 1300px) {
+  .content .container footer .block a {
+    font-size: 40px;
+  }
+}
+.content .container footer .block a:last-child {
+  margin-right: 0;
+}
 .content .container footer .credit {
-  margin-top: 158px;
   margin-bottom: 32px;
   opacity: 0.32;
   font-family: TTFirsNeue-Regular;
@@ -152,6 +282,16 @@ body {
   line-height: normal;
   letter-spacing: normal;
   color: #e9eaee;
+}
+@media screen and (max-width: 1300px) {
+  .content .container footer .credit {
+    margin-top: 154px;
+  }
+}
+@media screen and (min-width: 1300px) {
+  .content .container footer .credit {
+    margin-top: 158px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

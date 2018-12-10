@@ -8,11 +8,26 @@ body
   background: url(./img/main-bg.jpg)
 
   .main-photo
-    height: 100vh
-    position: sticky
-    top: 0
-    right: 0
-    bottom: 0
+    &_center
+      display: none
+      @media screen and (max-width: 1300px)
+        display: block
+        width: 768px
+        height: 742px
+      @media screen and (max-width: 768px)
+        display: block
+        width: 414px
+        height: 552px
+
+    &_footer
+      display: none
+      @media screen and (min-width: 1300px)
+        display: block
+        height: 100vh
+        position: sticky
+        top: 0
+        right: 0
+        bottom: 0
 
   .container
     background-color: #f3f3f3
@@ -22,7 +37,15 @@ body
 
 
     .wrapper
-      padding: 0 80px 0 140px
+      @media screen and (max-width: 768px)
+        padding-right: 32px
+        padding-left: 32px
+      @media screen and (min-width: 768px)
+        padding-right: 56px
+        padding-left: 56px
+      @media screen and (min-width: 1300px)
+        padding-right: 80px
+        padding-left: 140px
       header
         display: flex
         justify-content: space-between
@@ -42,8 +65,14 @@ body
         p
           margin: 0
           margin-bottom: 6px
+          @media screen and (max-width: 768px)
+            width: 135px
+            height: 36px
           font-family: TTFirsNeue-Regular
-          font-size: 20px
+          @media screen and (max-width: 768px)
+            font-size: 18px
+          @media screen and (min-width: 1300px)
+            font-size: 20px
           font-weight: normal
           font-style: normal
           font-stretch: normal
@@ -57,22 +86,34 @@ body
         flex-direction: column
 
         h1
-          margin: 82px 0 8px 0
-          width: 602px
-          height: 254px
+          margin-top: 82px
+          margin-bottom: 8px
+          @media screen and (max-width: 768px)
+            width: 350px
+            height: 200px
+          @media screen and (min-width: 768px)
+            width: 602px
+            height: 254px
           font-family: TTFirsNeue-Medium
-          font-size: 64px
+          @media screen and (max-width: 768px)
+            font-size: 48px
+          @media screen and (min-width: 768px)
+            font-size: 64px
           font-weight: 500
           font-style: normal
           font-stretch: normal
-          line-height: 0.91
-          letter-spacing: -0.4px
+          @media screen and (min-width: 768px)
+            line-height: 0.91
+            letter-spacing: -0.4px
           color: #000000
         
         p
           margin: 0
           font-family: TTFirsNeue-Medium
-          font-size: 20px
+          @media screen and (max-width: 768px)
+            font-size: 18px
+          @media screen and (min-width: 768px)
+            font-size: 20px
           font-weight: 500
           font-style: normal
           font-stretch: normal
@@ -86,9 +127,15 @@ body
           align-items: center
 
           margin-top: 40px
-          margin-bottom: 180px
+          @media screen and (max-width: 1300px)
+            margin-bottom: 140px
+          @media screen and (min-width: 1300px)
+            margin-bottom: 180px
 
-          width: 454px
+          @media screen and (max-width: 768px)
+            width: 346px
+          @media screen and (min-width: 768px)
+            width: 454px
           height: 72px
           background-color: #000000
           text-decoration: none
@@ -118,13 +165,22 @@ body
         margin: 0
 
       .block
+        .social-links
+          @media screen and (max-width: 767px)
+            display: flex
+            flex-direction: column
+            
+
         p
           margin-top: 68px
           margin-bottom: 20px
 
           opacity: 0.8
           font-family: TTFirsNeue-Regular
-          font-size: 20px
+          @media screen and (max-width: 768px)
+            font-size: 18px
+          @media screen and (min-width: 1300px)
+            font-size: 20px
           font-weight: normal
           font-style: normal
           font-stretch: normal
@@ -138,16 +194,25 @@ body
 
           opacity: 0.4
           font-family: TTFirsNeue-Bold
-          font-size: 40px
+          @media screen and (max-width: 768px)
+            font-size: 32px
+          @media screen and (min-width: 1300px)
+            font-size: 40px
           font-weight: bold
           font-style: normal
           font-stretch: normal
           line-height: normal
           letter-spacing: -0.4px
           color: #ffffff
+
+          &:last-child
+            margin-right: 0
       
       .credit
-        margin-top: 158px
+        @media screen and (max-width: 1300px)
+          margin-top: 154px
+        @media screen and (min-width: 1300px)
+          margin-top: 158px
         margin-bottom: 32px
         opacity: 0.32
         font-family: TTFirsNeue-Regular
