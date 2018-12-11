@@ -58,8 +58,8 @@ body
         background: url(./img/main-bg.jpg)
 
         img
-          width: 80px
-          height: 30px
+          width: 64px
+          height: 24px
           object-fit: contain
         
         p
@@ -102,15 +102,14 @@ body
             line-height: 1
           h2
             margin: 0
-            font-family: TTFirsNeue-Light
-            font-size: 44px
-            font-weight: 300
+            font-family: TTFirsNeue-Regular
+            font-size: 36px
             font-style: normal
             font-stretch: normal
             line-height: normal
-            letter-spacing: -1px
+            // letter-spacing: -1px
             color: #000000
-            line-height: 1
+            line-height: 1.2
 
             &:last-child
               width: 555px
@@ -167,24 +166,32 @@ body
           @media screen and (max-width: 768px)
             width: 346px
           @media screen and (min-width: 768px)
-            width: 326px
+            width: 280px
           height: 72px
           background-color: #000000
           text-decoration: none
 
+          &:hover
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.16)
+            transition: all 0.2s ease-in-out
+            transform: translate(0px,-4px)
+            &:not(:hover)
+              transition: all 0.2s ease-out
+
+
           p
-            font-family: TTFirsNeue-Medium
-            font-size: 12px
-            font-weight: 500
+            font-family: TTFirsNeue-ExtraLight
+            font-size: 20px
             font-style: normal
             font-stretch: normal
             line-height: normal
-            letter-spacing: 0.6px
+            // letter-spacing: 0.6px
             color: #ffffff
+            margin-top: 16px
           
           img
-            margin-left: 6px
-            margin-top: 2px
+            margin-left: 8px
+            margin-top: -6px
       
     footer
       display: flex
@@ -199,37 +206,37 @@ body
       .block           
         p
           opacity: 0.8
-          font-family: TTFirsNeue-Regular
+          font-family: TTFirsNeue-Light
           @media screen and (max-width: 768px)
             font-size: 18px
           @media screen and (min-width: 1300px)
-            font-size: 20px
+            font-size: 18px
           font-weight: normal
           font-style: normal
           font-stretch: normal
           line-height: normal
-          letter-spacing: normal
+          letter-spacing: 0.2px
           color: #ffffff
         
         a
           margin-right: 56px
-          margin-top: 20px
+          margin-top: 16px
           margin-bottom: 68px
           text-decoration: none
           display: block
 
-          opacity: 0.4
-          font-family: TTFirsNeue-Bold
+          color: #666666
+          opacity: 1
+          font-family: TTFirsNeue-Black
           @media screen and (max-width: 768px)
             font-size: 32px
           @media screen and (min-width: 1300px)
-            font-size: 40px
-          font-weight: bold
+            font-size: 32px
           font-style: normal
           font-stretch: normal
           line-height: normal
           letter-spacing: -0.4px
-          color: #ffffff
+          text-transform: uppercase
 
           -webkit-transition: margin-top 0.3s ease-out, margin-bottom 0.3s ease-out, opacity 0.3s ease-in-out
           -moz-transition: margin-top 0.3s ease-out, margin-bottom 0.3s ease-out, opacity 0.3s ease-in-out
@@ -237,9 +244,13 @@ body
           transition: margin-top 0.3s ease-out, margin-bottom 0.3s ease-out, opacity 0.3s ease-in-out
           
           &:hover
+            color: #ffffff
             opacity: 1
-            margin-top: 18px
-            margin-bottom: 70px
+            transform: translate(0px,-4px)
+            transition: all 0.2s ease-in-out
+            // margin-bottom: 70px
+            &:not(:hover)
+              transition: all 0.2s ease-out
 
 
           &:last-child
@@ -257,8 +268,8 @@ body
             flex-direction: column
           
           a
-            color: #ffffff
-            opacity: 0.4
+            color: #666666
+            opacity: 1
             &:hover
               opacity: 1
               &:first-child
