@@ -1,6 +1,10 @@
 body {
   font-family: TTFirsNeue-Regular;
 }
+body *::selection {
+  background: #FFE9DA;
+  color: inherit;
+}
 
 .content {
   display: flex;
@@ -295,7 +299,7 @@ body {
   margin-bottom: 32px;
   opacity: 0.32;
   font-family: TTFirsNeue-Regular;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
