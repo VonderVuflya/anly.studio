@@ -1,9 +1,16 @@
 body
   font-family: TTFirsNeue-Regular
   *::selection
-    background: #FFE9DA
-    color: inherit
-    
+    background: #E7EBFF
+    color: #AFBBF1
+
+a
+  text-decoration: none
+  transition: all .5s cubic-bezier(.5,0,.0,1)
+  &:hover
+    transition: all .5s cubic-bezier(.5,0,.0,1)
+    transform: translate(0px,-4px)
+
 .content
   display: flex
   flex-direction: row
@@ -49,22 +56,21 @@ body
         padding-left: 56px
       @media screen and (min-width: 1300px)
         padding-right: 80px
-        padding-left: 140px
-      header
+        padding-left: 120px
+      .header
         display: flex
         justify-content: flex-start
         align-items: center
 
-        position: sticky
+        width: 64px
+        height: 24px
+        object-fit: contain
+
         top: 0
         padding-top: 40px
         padding-bottom: 20px 
         background: url(./img/main-bg.jpg)
 
-        img
-          width: 64px
-          height: 24px
-          object-fit: contain
         
         p
           margin: 0
@@ -90,7 +96,7 @@ body
         flex-direction: column
 
         .main-block
-          margin-top: 586px - 20px
+          margin-top: 546px
           margin-bottom: 56px
           h1
             margin: 0
@@ -106,7 +112,7 @@ body
             line-height: 1
           h2
             margin: 0
-            font-family: TTFirsNeue-Regular
+            font-family: TTFirsNeue-Light
             font-size: 36px
             font-style: normal
             font-stretch: normal
@@ -160,6 +166,7 @@ body
           display: flex
           justify-content: center
           align-items: center
+          cursor: pointer
 
           margin-top: 40px
           @media screen and (max-width: 1300px)
@@ -173,37 +180,41 @@ body
             width: 280px
           height: 72px
           background-color: #000000
-          text-decoration: none
 
           &:hover
-            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.16)
-            transition: all 0.2s ease-in-out
-            transform: translate(0px,-4px)
-            &:not(:hover)
-              transition: all 0.2s ease-out
-
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.12)
 
           p
-            font-family: TTFirsNeue-ExtraLight
-            font-size: 20px
+            font-family: TTFirsNeue-Regular
+            font-size: 14px
             font-style: normal
             font-stretch: normal
             line-height: normal
-            // letter-spacing: 0.6px
             color: #ffffff
-            margin-top: 16px
+            margin-top: 10px
+            letter-spacing: 1px
+            text-transform: uppercase
           
           img
-            margin-left: 8px
-            margin-top: -6px
+            margin-left: 4px
+            margin-top: -8px
       
     footer
       display: flex
       flex-direction: column
 
-      padding-top: 68px
+      margin-top: 546px
+      // padding-top: 188px
       background-color: #000000
 
+      .footer
+        width: 64px
+        height: 24px
+
+        top: 0
+        padding-top: 40px
+        padding-bottom: 122px 
+        
       p, a
         margin: 0
 
@@ -226,7 +237,6 @@ body
           margin-right: 56px
           margin-top: 16px
           margin-bottom: 68px
-          text-decoration: none
           display: block
 
           color: #666666
@@ -242,30 +252,25 @@ body
           letter-spacing: -0.4px
           text-transform: uppercase
 
-          -webkit-transition: margin-top 0.3s ease-out, margin-bottom 0.3s ease-out, opacity 0.3s ease-in-out
-          -moz-transition: margin-top 0.3s ease-out, margin-bottom 0.3s ease-out, opacity 0.3s ease-in-out
-          -o-transition: margin-top 0.3s ease-out, margin-bottom 0.3s ease-out, opacity 0.3s ease-in-out
-          transition: margin-top 0.3s ease-out, margin-bottom 0.3s ease-out, opacity 0.3s ease-in-out
+          // -webkit-transition: margin-top 0.3s ease-out, margin-bottom 0.3s ease-out, opacity 0.3s ease-in-out
+          // -moz-transition: margin-top 0.3s ease-out, margin-bottom 0.3s ease-out, opacity 0.3s ease-in-out
+          // -o-transition: margin-top 0.3s ease-out, margin-bottom 0.3s ease-out, opacity 0.3s ease-in-out
+          // transition: margin-top 0.3s ease-out, margin-bottom 0.3s ease-out, opacity 0.3s ease-in-out
           
           &:hover
             color: #ffffff
             opacity: 1
-            transform: translate(0px,-4px)
-            transition: all 0.2s ease-in-out
             // margin-bottom: 70px
-            &:not(:hover)
-              transition: all 0.2s ease-out
-
 
           &:last-child
             margin-right: 0
-        
-        .phone-link
-          margin-bottom: 0
-          a:hover
-            padding-bottom: 2px
 
+        .email
+          width: 372px
         
+        .phone
+          width: 344px
+
         .social-links
           display: flex
           @media screen and (max-width: 767px)
@@ -275,13 +280,12 @@ body
             color: #666666
             opacity: 1
             &:hover
-              opacity: 1
               &:first-child
-                color: #ef2a82
+                color: #FF61CB
               &:nth-child(2)
-                color: #1c66ff
+                color: #5EA1FF
               &:last-child
-                color: #008fd5
+                color: #53C7FF
       
       .credit
         @media screen and (max-width: 1300px)
