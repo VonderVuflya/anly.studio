@@ -1,0 +1,22 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "/Users/blshv/text"
+		}
+	],
+	"settings": {
+		"prettier.eslintIntegration": true,
+		"javascript.format.enable": false,
+		"javascript.validate.enable": false,
+		"files.associations": {
+			"*.jsx": "javascriptreact",
+			"*.js": "javascriptreact"
+		},
+		"emmet.syntaxProfiles": {
+			"javascript": "jsx"
+		}
+	}
+}

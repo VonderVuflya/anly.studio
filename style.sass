@@ -1,235 +1,240 @@
 body
-  font-family: TTFirsNeue-Regular
-  *::selection
-    background: #E7EBFF
-    color: #AFBBF1
-      
+	font-family: TTFirsNeue-Regular
+	font-weight: normal
+	font-style: normal
+	*::selection
+		background: #E7EBFF
+		color: #AFBBF1
+
+h1, h2, h3, h4, h5
+	font-family: TTFirsNeue-Light
+	font-weight: normal
+	font-style: normal
+
 a
-  text-decoration: none
-  -webkit-transition: all .5s cubic-bezier(.5,0,.0,1)
-  -moz-transition: all .5s cubic-bezier(.5,0,.0,1)
-  -o-transition: all .5s cubic-bezier(.5,0,.0,1)
-  transition: all .5s cubic-bezier(.5,0,.0,1)
-  &:hover
-    -webkit-transition: all .5s cubic-bezier(.5,0,.0,1)
-    -moz-transition: all .5s cubic-bezier(.5,0,.0,1)
-    -o-transition: all .5s cubic-bezier(.5,0,.0,1)
-    transition: all .5s cubic-bezier(.5,0,.0,1)
-    transform: translate(0px,-4px)
+	text-decoration: none
+	-webkit-transition: all .5s cubic-bezier(.5,0,.0,1)
+	-moz-transition: all .5s cubic-bezier(.5,0,.0,1)
+	-o-transition: all .5s cubic-bezier(.5,0,.0,1)
+	transition: all .5s cubic-bezier(.5,0,.0,1)
+	&:hover
+		-webkit-transition: all .5s cubic-bezier(.5,0,.0,1)
+		-moz-transition: all .5s cubic-bezier(.5,0,.0,1)
+		-o-transition: all .5s cubic-bezier(.5,0,.0,1)
+		transition: all .5s cubic-bezier(.5,0,.0,1)
+		transform: translate(0px,-4px)
 
 .content
-  display: flex
-  flex-direction: row
-  flex-wrap: nowrap
-  background-color: #f3f3f3
-  background: url(./img/main-bg.jpg)
+	display: flex
+	flex-direction: row
+	flex-wrap: nowrap
+	background-color: #f3f3f3
+	background: url(./img/main-bg.jpg)
 
-  .main-photo
-    &_mobile
-      display: none
-      @media screen and (max-width: 414px)
-        display: block
-        width: 100%
+	.main-photo
+		&_mobile
+			display: none
+			@media screen and (max-width: 414px)
+				display: block
+				width: 100%
 
-    &_tablet
-      display: none
-      @media screen and (min-width: 415px) and (max-width: 1279px)
-        display: block
-        width: 100%
-        
-    &_desktop
-      display: none
-      @media screen and (min-width: 1280px)
-        display: block
-        height: 100vh
-        position: sticky
-        top: 0
-        right: 0
-        bottom: 0
+		&_tablet
+			display: none
+			@media screen and (min-width: 415px) and (max-width: 1279px)
+				display: block
+				width: 100%
 
-
-  .container
-    background-color: #f3f3f3
-    background: url(./img/main-bg.jpg)
-
-    width: 100%
+		&_desktop
+			display: none
+			@media screen and (min-width: 1280px)
+				display: block
+				height: 100vh
+				position: fixed
+				top: 0
+				right: 0
+				bottom: 0
 
 
-    .wrapper
-      @media screen and (max-width: 768px)
-        padding-right: 32px
-        padding-left: 32px
-      @media screen and (min-width: 768px)
-        padding-right: 56px
-        padding-left: 56px
-      @media screen and (min-width: 1280px)
-        padding-right: 80px
-        padding-left: 120px
-      .header
-        display: flex
-        justify-content: flex-start
-        align-items: center
+	.container
+		background-color: #f3f3f3
+		background: url(./img/main-bg.jpg)
+		width: 100%
 
-        width: 64px
-        height: 24px
-        object-fit: contain
+		.wrapper
+			@media screen and (max-width: 768px)
+				padding-right: 32px
+				padding-left: 32px
+			@media screen and (min-width: 768px)
+				padding-right: 56px
+				padding-left: 56px
+			@media screen and (min-width: 1280px)
+				padding-right: 80px
+				padding-left: 120px
+			.header
+				display: flex
+				justify-content: flex-start
+				align-items: center
 
-        top: 0
-        padding-top: 40px
-        padding-bottom: 20px 
-        background: url(./img/main-bg.jpg)
-      
-      main
-        display: flex
-        flex-direction: column
+				width: 64px
+				height: 24px
+				object-fit: contain
 
-        .main-block
-          margin-top: 546px
-          margin-bottom: 56px
-          h2
-            margin: 0
-            font-family: TTFirsNeue-Light
-            font-size: 36px
-            font-style: normal
-            font-stretch: normal
-            line-height: normal
-            color: #000000
-            line-height: 1.2
+				top: 0
+				padding-top: 40px
+				padding-bottom: 20px 
+				background: url(./img/main-bg.jpg)
 
-            @media screen and (max-width:768px)
-              font-size: 32px
-            @media screen and (max-width:414px)
-              font-size: 22px
-            @media screen and (device-width:414px)
-              font-family: TTFirsNeue-Light
-              font-size: 26px
+			main
+				display: flex
+				flex-direction: column
 
-        a
-          display: flex
-          justify-content: center
-          align-items: center
-          cursor: pointer
-          width: 280px
-          margin-top: 40px
-          margin-bottom: 546px
-          height: 72px
-          background-color: #000000
+				.main-block
+					margin-top: 546px
+					margin-bottom: 56px
+					h2
+						margin: 0
+						font-family: TTFirsNeue-Light
+						font-size: 36px
+						font-style: normal
+						font-stretch: normal
+						line-height: normal
+						color: #000000
+						line-height: 1.2
 
-          @media screen and (max-width: 414px)
-            width: 100%
+						@media screen and (max-width:768px)
+							font-size: 32px
+						@media screen and (max-width:414px)
+							font-size: 22px
+						@media screen and (device-width:414px)
+							font-size: 26px
 
-          &:hover
-            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.12)
+				a
+					display: flex
+					justify-content: center
+					align-items: center
+					cursor: pointer
+					width: 280px
+					margin-top: 40px
+					margin-bottom: 546px
+					height: 72px
+					background-color: #000000
 
-          p
-            font-family: TTFirsNeue-Regular
-            font-size: 14px
-            font-style: normal
-            font-stretch: normal
-            line-height: normal
-            color: #ffffff
-            margin-top: 10px
-            letter-spacing: 1px
-            text-transform: uppercase
-          
-          img
-            margin-left: 4px
-            margin-top: -8px
-      
-    footer
-      display: flex
-      flex-direction: column
-      background-color: #000000
+					@media screen and (max-width: 414px)
+						width: 100%
 
-      .footer
-        width: 64px
-        height: 24px
-        top: 0
-        padding-top: 40px
-        padding-bottom: 122px 
-        
-      p, a
-        margin: 0
+					&:hover
+						box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.12)
 
-      .block
-        margin-bottom: 68px   
-        p
-          opacity: 0.8
-          font-size: 18px
-          font-family: TTFirsNeue-Light
-          font-weight: normal
-          font-style: normal
-          font-stretch: normal
-          line-height: normal
-          letter-spacing: 0.2px
-          color: #ffffff
-          @media screen and (max-width:414px)
-              font-size: 16px
+				p
+					font-family: TTFirsNeue-Regular
+					font-size: 14px
+					font-style: normal
+					font-stretch: normal
+					line-height: normal
+					color: #ffffff
+					margin-top: 10px
+					letter-spacing: 1px
+					text-transform: uppercase
 
-        a
-          font-size: 32px
-          margin-right: 56px
-          margin-top: 16px
-          display: block
-          color: #666666
-          opacity: 1
-          font-family: TTFirsNeue-Black
-          font-style: normal
-          font-stretch: normal
-          line-height: normal
-          text-transform: uppercase
+				img
+					margin-left: 4px
+					margin-top: -8px
 
-          @media screen and (device-width: 768px)
-            margin-right: 40px
+		footer
+			display: flex
+			flex-direction: column
+			background-color: #000000
 
-          @media screen and (max-width: 414px)
-            font-size: 28px
+			.footer
+				width: 64px
+				height: 24px
+				top: 0
+				padding-top: 40px
+				padding-bottom: 122px 
 
-        .email
-          width: 372px
-          @media screen and (max-width: 768px)
-            color: #ffffff
-        .phone
-          width: 344px
-          @media screen and (max-width: 768px)
-            color: #ffffff
+			p, a
+				margin: 0
 
-        .social-links
-          display: flex
-          @media screen and (max-width: 767px)
-            flex-direction: column
-          
-          a
-            font-family: TTFirsNeue-Black
-            @media screen and (max-width: 768px)
-              &:first-child
-                color: #FF61CB
-              &:nth-child(2)
-                color: #5EA1FF
-              &:last-child
-                color: #53C7FF
+			.block
+				margin-bottom: 68px
+				p
+					opacity: 0.8
+					font-size: 18px
+					font-family: TTFirsNeue-Light
+					font-weight: normal
+					font-style: normal
+					font-stretch: normal
+					line-height: normal
+					letter-spacing: 0.2px
+					color: #ffffff
+					@media screen and (max-width:414px)
+						font-size: 16px
+				br
+					@media screen and (min-width:768px)
+						display: none
 
-            &:hover
-              &:first-child
-                color: #FF61CB
-              &:nth-child(2)
-                color: #5EA1FF
-              &:last-child
-                color: #53C7FF
+				a
+					font-size: 32px
+					margin-right: 56px
+					margin-top: 16px
+					display: block
+					color: #666666
+					font-family: TTFirsNeue-Black
+					font-style: normal
+					font-stretch: normal
+					line-height: normal
+					text-transform: uppercase
+					&:hover
+						color: #ffffff
+					@media screen and (device-width: 768px)
+						margin-right: 40px
 
-              
-      
-      .credit
-        margin-top: 158px
-        // @media screen and (device-width: 414px)
-        //   margin-top: 188px
-        color: #ffffff
-        margin-bottom: 32px
-        opacity: 0.32
-        font-family: TTFirsNeue-Regular
-        font-size: 16px
-        font-weight: normal
-        font-style: normal
-        font-stretch: normal
-        line-height: normal
-        letter-spacing: normal
+					@media screen and (max-width: 414px)
+						font-size: 28px
+
+				.email
+					width: 372px
+					@media screen and (max-width: 768px)
+						color: #ffffff
+				.phone
+					width: 344px
+					@media screen and (max-width: 768px)
+						color: #ffffff
+
+				.social-links
+					display: flex
+					@media screen and (max-width: 767px)
+						flex-direction: column
+					@media screen and (min-width: 1280px) and (max-width: 1400px)
+						flex-direction: column
+
+					a
+						font-family: TTFirsNeue-Black
+						@media screen and (max-width: 768px)
+							&:first-child
+								color: #FF61CB
+							&:nth-child(2)
+								color: #5EA1FF
+							&:last-child
+								color: #53C7FF
+
+						&:hover
+							&:first-child
+								color: #FF61CB
+							&:nth-child(2)
+								color: #5EA1FF
+							&:last-child
+								color: #53C7FF
+
+			.credit
+				margin-top: 158px
+				color: #ffffff
+				margin-bottom: 32px
+				opacity: 0.32
+				font-family: TTFirsNeue-Regular
+				font-size: 16px
+				font-weight: normal
+				font-style: normal
+				font-stretch: normal
+				line-height: normal
+				letter-spacing: normal

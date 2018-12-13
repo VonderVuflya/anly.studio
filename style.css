@@ -1,9 +1,17 @@
 body {
   font-family: TTFirsNeue-Regular;
+  font-weight: normal;
+  font-style: normal;
 }
 body *::selection {
   background: #E7EBFF;
   color: #AFBBF1;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: TTFirsNeue-Light;
+  font-weight: normal;
+  font-style: normal;
 }
 
 a {
@@ -53,7 +61,7 @@ a:hover {
   .content .main-photo_desktop {
     display: block;
     height: 100vh;
-    position: sticky;
+    position: fixed;
     top: 0;
     right: 0;
     bottom: 0;
@@ -124,7 +132,6 @@ a:hover {
 }
 @media screen and (device-width: 414px) {
   .content .container .wrapper main .main-block h2 {
-    font-family: TTFirsNeue-Light;
     font-size: 26px;
   }
 }
@@ -147,7 +154,7 @@ a:hover {
 .content .container .wrapper main a:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.12);
 }
-.content .container .wrapper main a p {
+.content .container .wrapper main p {
   font-family: TTFirsNeue-Regular;
   font-size: 14px;
   font-style: normal;
@@ -158,7 +165,7 @@ a:hover {
   letter-spacing: 1px;
   text-transform: uppercase;
 }
-.content .container .wrapper main a img {
+.content .container .wrapper main img {
   margin-left: 4px;
   margin-top: -8px;
 }
@@ -196,18 +203,25 @@ a:hover {
     font-size: 16px;
   }
 }
+@media screen and (min-width: 768px) {
+  .content .container footer .block br {
+    display: none;
+  }
+}
 .content .container footer .block a {
   font-size: 32px;
   margin-right: 56px;
   margin-top: 16px;
   display: block;
   color: #666666;
-  opacity: 1;
   font-family: TTFirsNeue-Black;
   font-style: normal;
   font-stretch: normal;
   line-height: normal;
   text-transform: uppercase;
+}
+.content .container footer .block a:hover {
+  color: #ffffff;
 }
 @media screen and (device-width: 768px) {
   .content .container footer .block a {
@@ -239,6 +253,11 @@ a:hover {
   display: flex;
 }
 @media screen and (max-width: 767px) {
+  .content .container footer .block .social-links {
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 1280px) and (max-width: 1400px) {
   .content .container footer .block .social-links {
     flex-direction: column;
   }
