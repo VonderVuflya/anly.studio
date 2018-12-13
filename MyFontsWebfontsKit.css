@@ -100,7 +100,11 @@
     url("webfonts/37E8E0_2_0.ttf") format("truetype");
 }
 
-/* @font-face {font-family: 'TTFirsNeue-Black';src: url('webfonts/37E8E0_3_0.eot');src: url('webfonts/37E8E0_3_0.eot?#iefix') format('embedded-opentype'),url('webfonts/37E8E0_3_0.woff2') format('woff2'),url('webfonts/37E8E0_3_0.woff') format('woff'),url('webfonts/37E8E0_3_0.ttf') format('truetype');} */
+@font-face {
+  font-family: 'TTFirsNeue-Black';
+  src: url('webfonts/37E8E0_3_0.eot');
+  src: url('webfonts/37E8E0_3_0.eot?#iefix') format('embedded-opentype'), url('webfonts/37E8E0_3_0.woff2') format('woff2'), url('webfonts/37E8E0_3_0.woff') format('woff'), url('webfonts/37E8E0_3_0.ttf') format('truetype');
+}
 
 /* @font-face {font-family: 'TTFirsNeue-BlackItalic';src: url('webfonts/37E8E0_4_0.eot');src: url('webfonts/37E8E0_4_0.eot?#iefix') format('embedded-opentype'),url('webfonts/37E8E0_4_0.woff2') format('woff2'),url('webfonts/37E8E0_4_0.woff') format('woff'),url('webfonts/37E8E0_4_0.ttf') format('truetype');} */
 
@@ -113,13 +117,26 @@
     url("webfonts/37E8E0_5_0.ttf") format("truetype");
 }
 
-/* @font-face {font-family: 'TTFirsNeue-ExtraBold';src: url('webfonts/37E8E0_6_0.eot');src: url('webfonts/37E8E0_6_0.eot?#iefix') format('embedded-opentype'),url('webfonts/37E8E0_6_0.woff2') format('woff2'),url('webfonts/37E8E0_6_0.woff') format('woff'),url('webfonts/37E8E0_6_0.ttf') format('truetype');} */
+@font-face {
+  font-family: 'TTFirsNeue-ExtraBold';
+  src: url('webfonts/37E8E0_6_0.eot');
+  src: url('webfonts/37E8E0_6_0.eot?#iefix') format('embedded-opentype'), url('webfonts/37E8E0_6_0.woff2') format('woff2'), url('webfonts/37E8E0_6_0.woff') format('woff'), url('webfonts/37E8E0_6_0.ttf') format('truetype');
+}
 
+*/
 /* @font-face {font-family: 'TTFirsNeue-ExtraLightItalic';src: url('webfonts/37E8E0_7_0.eot');src: url('webfonts/37E8E0_7_0.eot?#iefix') format('embedded-opentype'),url('webfonts/37E8E0_7_0.woff2') format('woff2'),url('webfonts/37E8E0_7_0.woff') format('woff'),url('webfonts/37E8E0_7_0.ttf') format('truetype');} */
 
-/* @font-face {font-family: 'TTFirsNeue-DemiBold';src: url('webfonts/37E8E0_8_0.eot');src: url('webfonts/37E8E0_8_0.eot?#iefix') format('embedded-opentype'),url('webfonts/37E8E0_8_0.woff2') format('woff2'),url('webfonts/37E8E0_8_0.woff') format('woff'),url('webfonts/37E8E0_8_0.ttf') format('truetype');} */
+@font-face {
+  font-family: 'TTFirsNeue-DemiBold';
+  src: url('webfonts/37E8E0_8_0.eot');
+  src: url('webfonts/37E8E0_8_0.eot?#iefix') format('embedded-opentype'), url('webfonts/37E8E0_8_0.woff2') format('woff2'), url('webfonts/37E8E0_8_0.woff') format('woff'), url('webfonts/37E8E0_8_0.ttf') format('truetype');
+}
 
-/* @font-face {font-family: 'TTFirsNeue-ExtraLight';src: url('webfonts/37E8E0_9_0.eot');src: url('webfonts/37E8E0_9_0.eot?#iefix') format('embedded-opentype'),url('webfonts/37E8E0_9_0.woff2') format('woff2'),url('webfonts/37E8E0_9_0.woff') format('woff'),url('webfonts/37E8E0_9_0.ttf') format('truetype');} */
+@font-face {
+  font-family: 'TTFirsNeue-ExtraLight';
+  src: url('webfonts/37E8E0_9_0.eot');
+  src: url('webfonts/37E8E0_9_0.eot?#iefix') format('embedded-opentype'), url('webfonts/37E8E0_9_0.woff2') format('woff2'), url('webfonts/37E8E0_9_0.woff') format('woff'), url('webfonts/37E8E0_9_0.ttf') format('truetype');
+}
 
 /* @font-face {font-family: 'TTFirsNeue-Italic';src: url('webfonts/37E8E0_A_0.eot');src: url('webfonts/37E8E0_A_0.eot?#iefix') format('embedded-opentype'),url('webfonts/37E8E0_A_0.woff2') format('woff2'),url('webfonts/37E8E0_A_0.woff') format('woff'),url('webfonts/37E8E0_A_0.ttf') format('truetype');} */
 
@@ -135,4 +152,4 @@
 
 /* @font-face {font-family: 'TTFirsNeue-BoldItalic';src: url('webfonts/37E8E0_10_0.eot');src: url('webfonts/37E8E0_10_0.eot?#iefix') format('embedded-opentype'),url('webfonts/37E8E0_10_0.woff2') format('woff2'),url('webfonts/37E8E0_10_0.woff') format('woff'),url('webfonts/37E8E0_10_0.ttf') format('truetype');} */
 
-/* @font-face {font-family: 'TTFirsNeue-ExtraBoldItalic';src: url('webfonts/37E8E0_11_0.eot');src: url('webfonts/37E8E0_11_0.eot?#iefix') format('embedded-opentype'),url('webfonts/37E8E0_11_0.woff2') format('woff2'),url('webfonts/37E8E0_11_0.woff') format('woff'),url('webfonts/37E8E0_11_0.ttf') format('truetype');} */
+/* @font-face {font-family: 'TTFirsNeue-ExtraBoldItalic';src: url('webfonts/37E8E0_11_0.eot');src: url('webfonts/37E8E0_11_0.eot?#iefix') format('embedded-opentype'),url('webfonts/37E8E0_11_0.woff2') format('woff2'),url('webfonts/37E8E0_11_0.woff') format('woff'),url('webfonts/37E8E0_11_0.ttf') format('truetype');}
