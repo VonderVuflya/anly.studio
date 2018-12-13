@@ -163,6 +163,8 @@ a
           line-height: normal
           letter-spacing: 0.2px
           color: #ffffff
+          @media screen and (max-width:414px)
+              font-size: 16px
 
         a
           font-size: 32px
@@ -176,14 +178,6 @@ a
           font-stretch: normal
           line-height: normal
           text-transform: uppercase
-
-          // @media screen and (max-width: 768px)
-          //   &:first-child
-          //     color: #FF61CB
-          //   &:nth-child(2)
-          //     color: #5EA1FF
-          //   &:last-child
-          //     color: #53C7FF
 
           @media screen and (device-width: 768px)
             margin-right: 40px
@@ -227,8 +221,8 @@ a
       
       .credit
         margin-top: 158px
-        @media screen and (device-width: 414px)
-          margin-top: 212px
+        // @media screen and (device-width: 414px)
+        //   margin-top: 188px
         color: #ffffff
         margin-bottom: 32px
         opacity: 0.32

@@ -191,6 +191,11 @@ a:hover {
   letter-spacing: 0.2px;
   color: #ffffff;
 }
+@media screen and (max-width: 414px) {
+  .content .container footer .block p {
+    font-size: 16px;
+  }
+}
 .content .container footer .block a {
   font-size: 32px;
   margin-right: 56px;
@@ -273,11 +278,6 @@ a:hover {
   font-stretch: normal;
   line-height: normal;
   letter-spacing: normal;
-}
-@media screen and (device-width: 414px) {
-  .content .container footer .credit {
-    margin-top: 212px;
-  }
 }
 
 /*# sourceMappingURL=style.css.map */
