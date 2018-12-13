@@ -124,6 +124,7 @@ a:hover {
 }
 @media screen and (device-width: 414px) {
   .content .container .wrapper main .main-block h2 {
+    font-family: TTFirsNeue-Light;
     font-size: 26px;
   }
 }
@@ -201,7 +202,6 @@ a:hover {
   font-style: normal;
   font-stretch: normal;
   line-height: normal;
-  letter-spacing: -0.4px;
   text-transform: uppercase;
 }
 @media screen and (device-width: 768px) {
@@ -237,6 +237,9 @@ a:hover {
   .content .container footer .block .social-links {
     flex-direction: column;
   }
+}
+.content .container footer .block .social-links a {
+  font-family: TTFirsNeue-Black;
 }
 @media screen and (max-width: 768px) {
   .content .container footer .block .social-links a:first-child {
