@@ -1,15 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="14px" height="12px" viewBox="0 0 14 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: sketchtool 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
-    <title>40D310CA-07AB-44A4-AC80-9F70A8FC32DD</title>
-    <desc>Created with sketchtool.</desc>
-    <g id="website" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="anly1440" transform="translate(-447.000000, -510.000000)" fill="#FFFFFF">
-            <g id="unactive" transform="translate(142.000000, 482.000000)">
-                <g id="forward-arrow" transform="translate(305.000000, 28.000000)">
-                    <path d="M14,5.51411554 L8.55555556,0.00881201044 L8.55555556,3.15469974 C3.11111111,3.94117167 0.777777778,7.87353133 0,11.805891 C1.94444444,9.05323923 4.66666667,7.79488414 8.55555556,7.79488414 L8.55555556,11.0194191 L14,5.51411554 Z" id="Path"></path>
-                </g>
-            </g>
-        </g>
-    </g>
-</svg>
+<svg width="14" height="12" xmlns="http://www.w3.org/2000/svg"><path d="M14 5.514L8.556.01v3.146C3.11 3.94.778 7.874 0 11.805c1.944-2.752 4.667-4.01 8.556-4.01v3.224L14 5.514z" fill="#FFF" fill-rule="evenodd"/></svg>
