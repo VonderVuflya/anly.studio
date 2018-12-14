@@ -186,21 +186,28 @@ a
 					text-transform: uppercase
 					&:hover
 						color: #ffffff
+					&:last-child
+						margin-right: 0
 					@media screen and (device-width: 768px)
 						margin-right: 40px
-
+					
 					@media screen and (max-width: 414px)
+						font-size: 22px
+					@media screen and (min-width: 414px)
 						font-size: 28px
 
 				.email
 					width: 372px
 					@media screen and (max-width: 768px)
 						color: #ffffff
+					@media screen and (max-width: 414px)
+						width: 100%
 				.phone
 					width: 344px
 					@media screen and (max-width: 768px)
 						color: #ffffff
-
+					@media screen and (max-width: 414px)
+						width: 100%
 				.social-links
 					display: flex
 					@media screen and (max-width: 767px)

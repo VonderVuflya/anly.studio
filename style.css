@@ -223,12 +223,20 @@ a:hover {
 .content .container footer .block a:hover {
   color: #ffffff;
 }
+.content .container footer .block a:last-child {
+  margin-right: 0;
+}
 @media screen and (device-width: 768px) {
   .content .container footer .block a {
     margin-right: 40px;
   }
 }
 @media screen and (max-width: 414px) {
+  .content .container footer .block a {
+    font-size: 22px;
+  }
+}
+@media screen and (min-width: 414px) {
   .content .container footer .block a {
     font-size: 28px;
   }
@@ -241,12 +249,22 @@ a:hover {
     color: #ffffff;
   }
 }
+@media screen and (max-width: 414px) {
+  .content .container footer .block .email {
+    width: 100%;
+  }
+}
 .content .container footer .block .phone {
   width: 344px;
 }
 @media screen and (max-width: 768px) {
   .content .container footer .block .phone {
     color: #ffffff;
+  }
+}
+@media screen and (max-width: 414px) {
+  .content .container footer .block .phone {
+    width: 100%;
   }
 }
 .content .container footer .block .social-links {
