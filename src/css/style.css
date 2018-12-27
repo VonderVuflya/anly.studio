@@ -1,16 +1,24 @@
 body {
-  font-family: TTFirsNeue-Regular, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: TTFirsNeue-Regular, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol";
   font-weight: normal;
   font-style: normal;
   background-color: #f3f3f3;
 }
 body *::selection {
-  background: #E7EBFF;
-  color: #AFBBF1;
+  background: #e7ebff;
+  color: #afbbf1;
 }
 
-h1, h2, h3, h4, h5 {
-  font-family: TTFirsNeue-Light, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: TTFirsNeue-Light, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol";
   font-weight: normal;
   font-style: normal;
 }
@@ -34,7 +42,7 @@ a:hover {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  background: url(./img/main-bg.jpg);
+  background: url(../img/main-bg.jpg);
 }
 .content .main-photo_mobile {
   display: none;
@@ -68,7 +76,7 @@ a:hover {
   }
 }
 .content .container {
-  background: url(./img/main-bg.jpg);
+  background: url(../img/main-bg.jpg);
   width: 100%;
 }
 @media screen and (max-width: 768px) {
@@ -99,7 +107,7 @@ a:hover {
   top: 0;
   padding-top: 40px;
   padding-bottom: 20px;
-  background: url(./img/main-bg.jpg);
+  background: url(../img/main-bg.jpg);
 }
 .content .container .wrapper main {
   display: flex;
@@ -111,7 +119,9 @@ a:hover {
 }
 .content .container .wrapper main .main-block h2 {
   margin: 0;
-  font-family: TTFirsNeue-Light, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: TTFirsNeue-Light, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 36px;
   font-style: normal;
   font-stretch: normal;
@@ -154,7 +164,9 @@ a:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.12);
 }
 .content .container .wrapper main p {
-  font-family: TTFirsNeue-Regular, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: TTFirsNeue-Regular, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 14px;
   font-style: normal;
   font-stretch: normal;
@@ -180,7 +192,8 @@ a:hover {
   padding-top: 40px;
   padding-bottom: 122px;
 }
-.content .container footer p, .content .container footer a {
+.content .container footer p,
+.content .container footer a {
   margin: 0;
 }
 .content .container footer .block {
@@ -189,7 +202,9 @@ a:hover {
 .content .container footer .block p {
   opacity: 0.8;
   font-size: 18px;
-  font-family: TTFirsNeue-Light, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: TTFirsNeue-Light, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol";
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
@@ -213,7 +228,9 @@ a:hover {
   margin-top: 16px;
   display: block;
   color: #666666;
-  font-family: TTFirsNeue-Black, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: TTFirsNeue-Black, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol";
   font-style: normal;
   font-stretch: normal;
   line-height: normal;
@@ -280,34 +297,38 @@ a:hover {
   }
 }
 .content .container footer .block .social-links a {
-  font-family: TTFirsNeue-Black, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: TTFirsNeue-Black, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol";
 }
 @media screen and (max-width: 768px) {
   .content .container footer .block .social-links a:first-child {
-    color: #FF61CB;
+    color: #ff61cb;
   }
   .content .container footer .block .social-links a:nth-child(2) {
-    color: #5EA1FF;
+    color: #5ea1ff;
   }
   .content .container footer .block .social-links a:last-child {
-    color: #53C7FF;
+    color: #53c7ff;
   }
 }
 .content .container footer .block .social-links a:hover:first-child {
-  color: #FF61CB;
+  color: #ff61cb;
 }
 .content .container footer .block .social-links a:hover:nth-child(2) {
-  color: #5EA1FF;
+  color: #5ea1ff;
 }
 .content .container footer .block .social-links a:hover:last-child {
-  color: #53C7FF;
+  color: #53c7ff;
 }
 .content .container footer .credit {
   margin-top: 158px;
   color: #ffffff;
   margin-bottom: 32px;
   opacity: 0.32;
-  font-family: TTFirsNeue-Regular, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: TTFirsNeue-Regular, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 16px;
   font-weight: normal;
   font-style: normal;
@@ -316,4 +337,4 @@ a:hover {
   letter-spacing: normal;
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=../yle.css.map */
